@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Madhav Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<script>
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.getElementById("navbar");
+
+    menuIcon.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">MOGULLA MADHAV</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Project">MyProject</a>
+            <a href="#ContactMe">ContactMe</a>
+        </nav>
+    </header>
+    <section class="home " id="home">
+        <div class="home-img">
+            <img src="IMG_8690.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h3>Hello Myself</h3>
+            <h1>MOGULLA MADHAV</h1>
+            <h3>I'm a <span class="multiple-text">A 3rd Year B.Tech Student</span></h3>
+            <p>Highly motivated and result-oriented undergraduate student with a strong foundation in engineering and a
+                growing
+                passion for software and web development. Quick learner with experience in collaborative team
+                environments. Actively
+                seeking internship opportunities to apply and expand technical skills in real-world projects.</p>
+            <div class="social-media">
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1A2Lm5dyUmitDAz7VqlZVSN0DYzDmY7q0/view?usp=drivesdk" class="btn">Download CV</a>
+        </div>
+
+        <br>
+
+    </section>
+    <section class="about" id="about">
+        <div class="about-section">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>I'm<span>A Student</span></h3>
+            <p>I'm M.Madhav, a 3rd-year B.Tech Electronics and communiaction engineering student at Guru nank
+                Institutions Technical Campus, passionate about building real-world tech solutions and constantly
+                learning new skills in software development and AI.</p>
+            <p>
+
+                💻 Skills: Java, C, HTML, CSS,SQL <br>
+                🤖 Interests: Full-Stack Development<br>
+                🛠️ Projects: ATM Simulator using Java <br>
+                📘 Currently learning: DSA in Java and AI fundamentals
+            </p>
+            <a href="#" class="btn">Read More</a>
+
+        </div>
+        <div class="about-img">
+            <img src="Screenshot 2025-05-07 175534.png" alt="about Image">
+        </div>
+    </section>
+    <section class="Project" id="Project">
+        <h2 class="heading">My<span>project</span></h2>
+        <div class="Project-section">
+            <div class="project-box">
+                <h3> 🏦 ATM Simulator using Java</h3>
+                <p>Designed and developed an ATM Simulator in Java that replicates core banking functionalities. The system includes secure user login with PIN validation, balance inquiry, cash withdrawal, cash deposit, and transaction history tracking. Applied object-oriented programming concepts such as classes, objects, encapsulation, and inheritance to structure the code efficiently. Implemented input validation and error handling to manage invalid credentials, insufficient balance, and transaction limits. Focused on creating a user-friendly command-line interface while ensuring reliable and accurate transaction flow.
+                </p>
+                <ul>
+                    <li><strong>Language:</strong> JAVA</li>
+                    <li><strong>Features:</strong>secure login authentication, balance inquiry, cash withdrawal, deposit, transaction history, and error handling with OOP-based design </li>
+                </ul>
+                <a href="https://github.com/Madhav-12hub/ATM-Stimulator.git" class="btn">click Here for Source code</a>
+
+            </div>
+        </div>
+    </section>
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="phone number" placeholder=" phone  Number">
+                <input type="text" placeholder="Location">
+            </div>
+            <div>
+                <textarea name="message" id="message" cols="30" rows="10">You message</textarea>
+               <button type="submit" class="btn">Send Message</button>
+            </div> 
+        </form>
+    </section>
+
+    <footer class="Footer">
+        <div class="Social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copy-right">
+            &copy;Madhav - All Rights Reserved
+        </p>
+    </footer>
+
+</body>
+
+</html>
